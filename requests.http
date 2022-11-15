@@ -1,0 +1,61 @@
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Ingredients Index
+GET http://localhost:3000/ingredients.json
+
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
+
+
+### Ingredients create
+POST http://localhost:3000/ingredients.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjozLCJleHAiOjE2Mjk5OTI4NjR9.G2ExsrDYn3oE0vJkvm4T6Po2GbNpH5cqTEaVPVuK_MA
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "width": 640,
+  "height": 480
+}
+
+
+### Pantry_items Create
+POST http://localhost:5173/pantry_items.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Njc4NTU3OTl9.PRa2uDjpJJJu6kthftzJdK4b5iV2MiwzS5PaLAt4nL0
+Content-Type: application/json
+
+{
+  
+  "ingredient_id": 3
+  
+}
+
+
+### Spoonacular API
+GET https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch
+X-RapidAPI-Key: 35ce5dc21fmsh619540410661db6p16cb08jsncbb1048150fe
+X-RapidAPI-Host: spoonacular-recipe-food-nutrition-v1.p.rapidapi.com
+
+
+### Spoonacular 2
+GET https://api.spoonacular.com/recipes/findByIngredients?ingredients=apples
+X-API-KEY: 8c5f46c6628c4921933f0135d7d2dff3
+
+### PantryItems Index
+GET http://localhost:3000/pantryitems.json
