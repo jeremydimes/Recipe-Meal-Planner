@@ -1,0 +1,6 @@
+{
+  id: @pantry_item.id,
+  user_id: @pantry_item.user_id,
+  ingredient_id: @pantry_item.ingredient_id,
+  ingredient: @pantry_item.ingredient,
+}
